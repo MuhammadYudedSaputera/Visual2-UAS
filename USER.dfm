@@ -158,11 +158,38 @@ object Form6: TForm6
     Top = 272
     Width = 769
     Height = 201
+    DataSource = ds1
     TabOrder = 10
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'visualuas'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
+    Left = 16
+    Top = 32
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    SQL.Strings = (
+      'select * from tb_user')
+    Params = <>
+    Left = 56
+    Top = 32
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 16
+    Top = 88
   end
 end

@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 235
-  Top = 654
+  Left = 259
+  Top = 225
   Width = 1044
   Height = 540
   Caption = 'ORANG TUA'
@@ -250,6 +250,7 @@ object Form4: TForm4
     Top = 272
     Width = 769
     Height = 201
+    DataSource = ds1
     TabOrder = 14
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -265,5 +266,33 @@ object Form4: TForm4
     ItemHeight = 13
     TabOrder = 15
     Text = 'cbb3'
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'visualuas'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
+    Left = 16
+    Top = 32
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_orangtua')
+    Params = <>
+    Left = 56
+    Top = 32
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 16
+    Top = 88
   end
 end

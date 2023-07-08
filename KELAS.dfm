@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 192
-  Top = 125
+  Left = 292
+  Top = 146
   Width = 1044
   Height = 540
   Caption = 'KELAS'
@@ -138,11 +138,38 @@ object Form8: TForm8
     Top = 240
     Width = 769
     Height = 201
+    DataSource = ds1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'visualuas'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
+    Left = 16
+    Top = 32
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    SQL.Strings = (
+      'select * from tb_user')
+    Params = <>
+    Left = 56
+    Top = 32
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 16
+    Top = 88
   end
 end

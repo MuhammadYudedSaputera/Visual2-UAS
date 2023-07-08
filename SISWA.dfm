@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 316
-  Top = 182
+  Left = 513
+  Top = 191
   Width = 1044
   Height = 540
   Caption = 'SISWA'
@@ -11,6 +11,7 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
