@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 674
-  Top = 262
+  Left = 276
+  Top = 153
   Width = 1044
   Height = 540
   Caption = 'RIWAYAT POIN'
@@ -187,6 +187,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 7
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 360
@@ -227,24 +228,28 @@ object Form7: TForm7
   end
   object edt7: TEdit
     Left = 592
-    Top = 64
+    Top = 96
     Width = 265
     Height = 21
     TabOrder = 12
   end
-  object edt8: TEdit
+  object dtp1: TDateTimePicker
     Left = 592
-    Top = 96
+    Top = 64
     Width = 265
     Height = 21
+    Date = 45111.654919837970000000
+    Time = 45111.654919837970000000
     TabOrder = 13
   end
-  object edt9: TEdit
+  object cbb1: TComboBox
     Left = 592
     Top = 128
     Width = 265
     Height = 21
+    ItemHeight = 13
     TabOrder = 14
+    Text = 'cbb1'
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
