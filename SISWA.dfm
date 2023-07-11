@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 513
-  Top = 191
+  Left = 283
+  Top = 118
   Width = 1044
   Height = 540
   Caption = 'SISWA'
@@ -11,7 +11,6 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -286,6 +285,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'BARU'
     TabOrder = 13
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 240
@@ -336,7 +336,6 @@ object Form2: TForm2
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'visualuas'
@@ -348,7 +347,6 @@ object Form2: TForm2
   end
   object zqry1: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from tb_siswa ')
     Params = <>
@@ -357,7 +355,6 @@ object Form2: TForm2
   end
   object ds1: TDataSource
     DataSet = zqry1
-    OnDataChange = ds1DataChange
     Left = 16
     Top = 88
   end
