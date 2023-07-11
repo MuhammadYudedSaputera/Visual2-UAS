@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 276
-  Top = 153
+  Left = 548
+  Top = 199
   Width = 1044
   Height = 540
   Caption = 'RIWAYAT POIN'
