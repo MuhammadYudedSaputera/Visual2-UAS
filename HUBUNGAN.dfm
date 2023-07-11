@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 535
-  Top = 227
+  Left = 526
+  Top = 132
   Width = 1044
   Height = 540
   Caption = 'HUBUNGAN'
@@ -78,12 +78,13 @@ object Form5: TForm5
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object TEdit
+  object edt1: TEdit
     Left = 240
     Top = 32
     Width = 649
     Height = 21
     TabOrder = 0
+    Text = 'edt1'
   end
   object edt2: TEdit
     Left = 240
@@ -101,17 +102,10 @@ object Form5: TForm5
   end
   object edt4: TEdit
     Left = 240
-    Top = 128
-    Width = 649
-    Height = 21
-    TabOrder = 3
-  end
-  object edt5: TEdit
-    Left = 240
     Top = 160
     Width = 649
     Height = 21
-    TabOrder = 4
+    TabOrder = 3
   end
   object btn1: TButton
     Left = 120
@@ -119,7 +113,8 @@ object Form5: TForm5
     Width = 75
     Height = 25
     Caption = 'BARU'
-    TabOrder = 5
+    TabOrder = 4
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 240
@@ -127,7 +122,8 @@ object Form5: TForm5
     Width = 75
     Height = 25
     Caption = 'SIMPAN'
-    TabOrder = 6
+    TabOrder = 5
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 360
@@ -135,7 +131,7 @@ object Form5: TForm5
     Width = 75
     Height = 25
     Caption = 'EDIT'
-    TabOrder = 7
+    TabOrder = 6
   end
   object btn4: TButton
     Left = 472
@@ -143,7 +139,7 @@ object Form5: TForm5
     Width = 75
     Height = 25
     Caption = 'HAPUS'
-    TabOrder = 8
+    TabOrder = 7
   end
   object btn5: TButton
     Left = 584
@@ -151,7 +147,7 @@ object Form5: TForm5
     Width = 75
     Height = 25
     Caption = 'BATAL'
-    TabOrder = 9
+    TabOrder = 8
   end
   object dbgrd1: TDBGrid
     Left = 120
@@ -159,12 +155,24 @@ object Form5: TForm5
     Width = 769
     Height = 201
     DataSource = ds1
-    TabOrder = 10
+    TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object cbb1: TComboBox
+    Left = 240
+    Top = 128
+    Width = 649
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 10
+    Items.Strings = (
+      'Kandung'
+      'Tiri'
+      'Wali')
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

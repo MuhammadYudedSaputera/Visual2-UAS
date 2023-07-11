@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 283
-  Top = 118
+  Left = 253
+  Top = 190
   Width = 1044
   Height = 540
   Caption = 'SISWA'
@@ -233,6 +233,9 @@ object Form2: TForm2
     Height = 21
     ItemHeight = 13
     TabOrder = 6
+    Items.Strings = (
+      'P'
+      'L')
   end
   object edt6: TEdit
     Left = 616
@@ -248,6 +251,10 @@ object Form2: TForm2
     Height = 21
     ItemHeight = 13
     TabOrder = 8
+    Items.Strings = (
+      'IPA'
+      'IPS'
+      'AGAMA')
   end
   object edt7: TEdit
     Left = 616
@@ -277,6 +284,9 @@ object Form2: TForm2
     Height = 21
     ItemHeight = 13
     TabOrder = 12
+    Items.Strings = (
+      'AKTIF'
+      'TIDAK AKTIF')
   end
   object btn1: TButton
     Left = 120
@@ -294,6 +304,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 14
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 360
@@ -331,11 +342,13 @@ object Form2: TForm2
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'visualuas'
@@ -347,6 +360,7 @@ object Form2: TForm2
   end
   object zqry1: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'select * from tb_siswa ')
     Params = <>

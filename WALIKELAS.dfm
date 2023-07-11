@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 249
-  Top = 195
+  Left = 270
+  Top = 251
   Width = 1044
   Height = 541
   Caption = 'WALI KELAS'
@@ -106,7 +106,7 @@ object Form3: TForm3
   end
   object lbl10: TLabel
     Left = 504
-    Top = 96
+    Top = 128
     Width = 44
     Height = 13
     Caption = 'STATUS'
@@ -119,7 +119,7 @@ object Form3: TForm3
   end
   object lbl11: TLabel
     Left = 504
-    Top = 128
+    Top = 96
     Width = 47
     Height = 13
     Caption = 'TELEPON'
@@ -175,7 +175,7 @@ object Form3: TForm3
   end
   object edt6: TEdit
     Left = 616
-    Top = 128
+    Top = 96
     Width = 265
     Height = 21
     TabOrder = 6
@@ -188,21 +188,14 @@ object Form3: TForm3
     ItemHeight = 13
     TabOrder = 7
   end
-  object cbb3: TComboBox
-    Left = 616
-    Top = 96
-    Width = 265
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 8
-  end
   object btn1: TButton
     Left = 120
     Top = 208
     Width = 75
     Height = 25
     Caption = 'BARU'
-    TabOrder = 9
+    TabOrder = 8
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 240
@@ -210,7 +203,7 @@ object Form3: TForm3
     Width = 75
     Height = 25
     Caption = 'SIMPAN'
-    TabOrder = 10
+    TabOrder = 9
   end
   object btn3: TButton
     Left = 360
@@ -218,7 +211,7 @@ object Form3: TForm3
     Width = 75
     Height = 25
     Caption = 'EDIT'
-    TabOrder = 11
+    TabOrder = 10
   end
   object btn4: TButton
     Left = 472
@@ -226,7 +219,7 @@ object Form3: TForm3
     Width = 75
     Height = 25
     Caption = 'HAPUS'
-    TabOrder = 12
+    TabOrder = 11
   end
   object btn5: TButton
     Left = 584
@@ -234,7 +227,7 @@ object Form3: TForm3
     Width = 75
     Height = 25
     Caption = 'BATAL'
-    TabOrder = 13
+    TabOrder = 12
   end
   object dbgrd1: TDBGrid
     Left = 120
@@ -242,12 +235,20 @@ object Form3: TForm3
     Width = 769
     Height = 201
     DataSource = ds1
-    TabOrder = 14
+    TabOrder = 13
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object edt7: TEdit
+    Left = 616
+    Top = 128
+    Width = 265
+    Height = 21
+    TabOrder = 14
+    Text = 'edt7'
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

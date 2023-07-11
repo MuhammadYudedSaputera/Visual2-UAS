@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 259
-  Top = 225
+  Left = 247
+  Top = 162
   Width = 1044
   Height = 540
   Caption = 'ORANG TUA'
@@ -130,6 +130,19 @@ object Form4: TForm4
     Font.Style = [fsBold]
     ParentFont = False
   end
+  object lbl6: TLabel
+    Left = 504
+    Top = 160
+    Width = 44
+    Height = 13
+    Caption = 'STATUS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object edt1: TEdit
     Left = 232
     Top = 32
@@ -178,32 +191,17 @@ object Form4: TForm4
     ItemHeight = 13
     TabOrder = 5
     Text = 'cbb1'
+    Items.Strings = (
+      'P'
+      'L')
   end
   object edt6: TEdit
-    Left = 616
-    Top = 96
-    Width = 265
-    Height = 21
-    TabOrder = 6
-    Text = 'edt6'
-  end
-  object cbb2: TComboBox
     Left = 616
     Top = 64
     Width = 265
     Height = 21
-    ItemHeight = 13
-    TabOrder = 7
-    Text = 'cbb2'
-  end
-  object cbb3: TComboBox
-    Left = 616
-    Top = 128
-    Width = 265
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 8
-    Text = 'cbb3'
+    TabOrder = 6
+    Text = 'edt6'
   end
   object btn1: TButton
     Left = 120
@@ -211,7 +209,8 @@ object Form4: TForm4
     Width = 75
     Height = 25
     Caption = 'BARU'
-    TabOrder = 9
+    TabOrder = 7
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 240
@@ -219,7 +218,8 @@ object Form4: TForm4
     Width = 75
     Height = 25
     Caption = 'SIMPAN'
-    TabOrder = 10
+    TabOrder = 8
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 360
@@ -227,7 +227,7 @@ object Form4: TForm4
     Width = 75
     Height = 25
     Caption = 'EDIT'
-    TabOrder = 11
+    TabOrder = 9
   end
   object btn4: TButton
     Left = 472
@@ -235,7 +235,7 @@ object Form4: TForm4
     Width = 75
     Height = 25
     Caption = 'HAPUS'
-    TabOrder = 12
+    TabOrder = 10
   end
   object btn5: TButton
     Left = 584
@@ -243,7 +243,7 @@ object Form4: TForm4
     Width = 75
     Height = 25
     Caption = 'BATAL'
-    TabOrder = 13
+    TabOrder = 11
   end
   object dbgrd1: TDBGrid
     Left = 120
@@ -251,21 +251,46 @@ object Form4: TForm4
     Width = 769
     Height = 201
     DataSource = ds1
-    TabOrder = 14
+    TabOrder = 12
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object cbb4: TComboBox
+  object edt7: TEdit
+    Left = 616
+    Top = 96
+    Width = 265
+    Height = 21
+    TabOrder = 13
+    Text = 'edt6'
+  end
+  object cbb2: TComboBox
+    Left = 616
+    Top = 128
+    Width = 265
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 14
+    Text = 'cbb1'
+    Items.Strings = (
+      'ISLAM'
+      'KERISTEN'
+      'BUDHA'
+      'HINDU')
+  end
+  object cbb3: TComboBox
     Left = 616
     Top = 160
     Width = 265
     Height = 21
     ItemHeight = 13
     TabOrder = 15
-    Text = 'cbb3'
+    Text = 'cbb1'
+    Items.Strings = (
+      'AKTIF'
+      'NONAKTIF')
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
