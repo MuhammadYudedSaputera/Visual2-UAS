@@ -10,8 +10,10 @@ type
   TForm1 = class(TForm)
     btn1: TButton;
     btn2: TButton;
+    btn3: TButton;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,7 +25,7 @@ var
 
 implementation
 
-uses SISWA, WALIKELAS;
+uses SISWA, WALIKELAS, ORANGTUA;
 
 {$R *.dfm}
 
@@ -35,6 +37,11 @@ end;
 procedure TForm1.btn2Click(Sender: TObject);
 begin
 Form3.Show;
+end;
+
+procedure TForm1.btn3Click(Sender: TObject);
+begin
+form4.show;
 end;
 
 end.
