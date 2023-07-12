@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 172
-  Top = 194
+  Left = 237
+  Top = 182
   Width = 1044
   Height = 541
   Caption = 'WALI KELAS'
@@ -178,22 +178,21 @@ object Form3: TForm3
   end
   object edt6: TEdit
     Left = 616
-    Top = 96
+    Top = 64
     Width = 265
     Height = 21
     TabOrder = 6
   end
   object cbb2: TComboBox
     Left = 616
-    Top = 64
+    Top = 128
     Width = 265
     Height = 21
     ItemHeight = 13
     TabOrder = 7
     Items.Strings = (
-      'SD'
-      'SMP'
-      'SMA')
+      'AKTIF'
+      'TIDAK AKTIF')
   end
   object btn1: TButton
     Left = 120
@@ -215,11 +214,12 @@ object Form3: TForm3
   end
   object btn3: TButton
     Left = 360
-    Top = 208
+    Top = 216
     Width = 75
-    Height = 25
+    Height = 17
     Caption = 'EDIT'
     TabOrder = 10
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 472
@@ -249,10 +249,11 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object edt7: TEdit
     Left = 616
-    Top = 128
+    Top = 96
     Width = 265
     Height = 21
     TabOrder = 14
