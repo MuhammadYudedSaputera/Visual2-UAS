@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 270
-  Top = 251
+  Left = 172
+  Top = 194
   Width = 1044
   Height = 541
   Caption = 'WALI KELAS'
@@ -172,6 +172,9 @@ object Form3: TForm3
     Height = 21
     ItemHeight = 13
     TabOrder = 5
+    Items.Strings = (
+      'L'
+      'P')
   end
   object edt6: TEdit
     Left = 616
@@ -187,6 +190,10 @@ object Form3: TForm3
     Height = 21
     ItemHeight = 13
     TabOrder = 7
+    Items.Strings = (
+      'SD'
+      'SMP'
+      'SMA')
   end
   object btn1: TButton
     Left = 120
@@ -204,6 +211,7 @@ object Form3: TForm3
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 9
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 360

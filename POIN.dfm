@@ -1,6 +1,6 @@
 object Form9: TForm9
-  Left = 433
-  Top = 154
+  Left = 247
+  Top = 149
   Width = 1044
   Height = 540
   Caption = 'POIN'
@@ -170,6 +170,9 @@ object Form9: TForm9
     ItemHeight = 13
     TabOrder = 10
     Text = 'cbb1'
+    Items.Strings = (
+      'AKTIF'
+      'NON AKTIF')
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
