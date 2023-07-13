@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 526
-  Top = 132
+  Left = 201
+  Top = 239
   Width = 1044
   Height = 540
   Caption = 'HUBUNGAN'
@@ -154,13 +154,16 @@ object Form5: TForm5
     Top = 272
     Width = 769
     Height = 201
+    Ctl3D = True
     DataSource = ds1
+    ParentCtl3D = False
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object cbb1: TComboBox
     Left = 240
@@ -178,6 +181,7 @@ object Form5: TForm5
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'visualuas'
@@ -189,6 +193,7 @@ object Form5: TForm5
   end
   object zqry1: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'select * from tb_hubungan')
     Params = <>
@@ -199,5 +204,43 @@ object Form5: TForm5
     DataSet = zqry1
     Left = 16
     Top = 88
+  end
+  object frxrprt1: TfrxReport
+    Version = '4.0.11'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45120.880188194450000000
+    ReportOptions.LastChange = 45120.880188194450000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 16
+    Top = 144
+    Datasets = <>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      MirrorMargins = True
+    end
+  end
+  object frxdbdtst1: TfrxDBDataset
+    UserName = 'frxdbdtst1'
+    CloseDataSource = False
+    DataSet = zqry1
+    Left = 16
+    Top = 200
   end
 end
