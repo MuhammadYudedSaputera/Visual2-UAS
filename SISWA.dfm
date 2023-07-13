@@ -390,7 +390,7 @@ object Form2: TForm2
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45119.440138807900000000
-    ReportOptions.LastChange = 45119.451181724540000000
+    ReportOptions.LastChange = 45119.451181724500000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'

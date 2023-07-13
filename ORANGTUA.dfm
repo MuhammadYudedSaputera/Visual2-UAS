@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 313
-  Top = 239
+  Left = 178
+  Top = 223
   Width = 1044
   Height = 540
   Caption = 'ORANG TUA'
@@ -329,7 +329,7 @@ object Form4: TForm4
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45119.481026990700000000
-    ReportOptions.LastChange = 45119.481026990700000000
+    ReportOptions.LastChange = 45120.886379722220000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
