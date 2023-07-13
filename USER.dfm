@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 175
-  Top = 489
+  Left = 283
+  Top = 193
   Width = 1044
   Height = 540
   Caption = 'USER'
