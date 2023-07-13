@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 196
-  Top = 227
+  Left = 132
+  Top = 412
   Width = 1044
   Height = 540
   Caption = 'HUBUNGAN'
@@ -204,6 +204,13 @@ object Form5: TForm5
     DataSet = zqry1
     Left = 16
     Top = 88
+  end
+  object frxdbdtst1: TfrxDBDataset
+    UserName = 'frxdbdtst1'
+    CloseDataSource = False
+    DataSet = zqry1
+    Left = 16
+    Top = 200
   end
   object frxrprt1: TfrxReport
     Version = '4.0.11'
@@ -436,12 +443,5 @@ object Form5: TForm5
         end
       end
     end
-  end
-  object frxdbdtst1: TfrxDBDataset
-    UserName = 'frxdbdtst1'
-    CloseDataSource = False
-    DataSet = zqry1
-    Left = 16
-    Top = 200
   end
 end

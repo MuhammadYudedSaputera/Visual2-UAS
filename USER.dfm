@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 258
-  Top = 208
+  Left = 175
+  Top = 489
   Width = 1044
   Height = 540
   Caption = 'USER'
@@ -210,7 +210,7 @@ object Form6: TForm6
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45120.889755381900000000
-    ReportOptions.LastChange = 45120.892635000000000000
+    ReportOptions.LastChange = 45120.899690219910000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       ''
@@ -242,9 +242,13 @@ object Form6: TForm6
         Height = 22.677180000000000000
         Top = 18.897650000000000000
         Width = 718.110700000000000000
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 22.677180000000000000
+        Top = 64.252010000000000000
+        Width = 718.110700000000000000
         object Memo1: TfrxMemoView
           Left = 3.779530000000000000
-          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -260,7 +264,6 @@ object Form6: TForm6
         end
         object Memo2: TfrxMemoView
           Left = 102.047310000000000000
-          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -276,7 +279,6 @@ object Form6: TForm6
         end
         object Memo3: TfrxMemoView
           Left = 200.315090000000000000
-          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -292,7 +294,6 @@ object Form6: TForm6
         end
         object Memo4: TfrxMemoView
           Left = 298.582870000000000000
-          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -308,7 +309,6 @@ object Form6: TForm6
         end
         object Memo5: TfrxMemoView
           Left = 396.850650000000000000
-          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           DisplayFormat.DecimalSeparator = ','
@@ -322,11 +322,6 @@ object Form6: TForm6
             'status')
           ParentFont = False
         end
-      end
-      object PageHeader1: TfrxPageHeader
-        Height = 22.677180000000000000
-        Top = 64.252010000000000000
-        Width = 718.110700000000000000
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000

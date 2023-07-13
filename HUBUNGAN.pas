@@ -29,8 +29,8 @@ type
     ds1: TDataSource;
     edt1: TEdit;
     cbb1: TComboBox;
-    frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    frxrprt1: TfrxReport;
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
