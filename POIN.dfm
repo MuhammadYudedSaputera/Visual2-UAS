@@ -1,6 +1,6 @@
 object Form9: TForm9
-  Left = 251
-  Top = 267
+  Left = 256
+  Top = 285
   Width = 1044
   Height = 540
   Caption = 'POIN'
@@ -173,6 +173,15 @@ object Form9: TForm9
     Items.Strings = (
       'AKTIF'
       'NON AKTIF')
+  end
+  object btn6: TButton
+    Left = 696
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'report'
+    TabOrder = 11
+    OnClick = btn6Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

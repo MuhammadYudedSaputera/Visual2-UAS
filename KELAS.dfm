@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 274
-  Top = 151
+  Left = 326
+  Top = 221
   Width = 1044
   Height = 540
   Caption = 'KELAS'
@@ -150,6 +150,15 @@ object Form8: TForm8
     ItemHeight = 13
     TabOrder = 9
     Text = 'cbb1'
+  end
+  object btn6: TButton
+    Left = 680
+    Top = 192
+    Width = 75
+    Height = 25
+    Caption = 'report'
+    TabOrder = 10
+    OnClick = btn6Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

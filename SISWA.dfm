@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 162
-  Top = 216
+  Left = 158
+  Top = 380
   Width = 1044
   Height = 540
   Caption = 'SISWA'

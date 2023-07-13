@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 132
-  Top = 412
+  Left = 299
+  Top = 328
   Width = 1044
   Height = 540
   Caption = 'HUBUNGAN'
@@ -176,6 +176,15 @@ object Form5: TForm5
       'Kandung'
       'Tiri'
       'Wali')
+  end
+  object btn6: TButton
+    Left = 704
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'report'
+    TabOrder = 11
+    OnClick = btn6Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

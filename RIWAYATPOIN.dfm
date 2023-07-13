@@ -251,6 +251,15 @@ object Form7: TForm7
     TabOrder = 14
     Text = 'cbb1'
   end
+  object btn6: TButton
+    Left = 688
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'report'
+    TabOrder = 15
+    OnClick = btn6Click
+  end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False

@@ -292,6 +292,15 @@ object Form4: TForm4
       'AKTIF'
       'NONAKTIF')
   end
+  object btn6: TButton
+    Left = 704
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'report'
+    TabOrder = 16
+    OnClick = btn6Click
+  end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
